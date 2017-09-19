@@ -8,9 +8,9 @@ using namespace std;
 
 int main(){
     double a, b, c;
-    while(scanf("%lf %lf %lf") == 3){
+    while(scanf("%lf %lf %lf", &a, &b, &c) == 3){
         double s = (a + b + c)/2.0;
-        double area = sqrt(s*(s-a)*(s-b)*(s-c)); //
+        double area = sqrt(s*(s-a)*(s-b)*(s-c));
         double ans = (4.0/3.0) * area;
         (area > 0) ? printf("%0.3lf\n", ans) : printf("-1.000\n");
     }
